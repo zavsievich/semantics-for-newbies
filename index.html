@@ -12,7 +12,7 @@
         <ul class="nav__list">
           <li><a class="nav__link" href="#tags">Tags</a></li>
           <li><a class="nav__link" href="#about">About</a></li>
-          <li><a class="nav__link" href="#non-semantic">Divs and Spans</a></li>
+          <li><a class="nav__link" href="#no-meaning">Divs and Spans</a></li>
           <li><a class="nav__link" href="#headings">Headings</a></li>
           <li>
             <a class="nav__link" href="#sections-and-articles"
@@ -26,55 +26,71 @@
       <main class="main">
         <h1>Semantics for newbies</h1>
         <section id="tags">
-          <h2>Common Tags</h2>
+          <h2>HTML Tags</h2>
           <p>
-            These are the most common tags you will use in your HTML documents:
+            HTML tags are used to define the structure of your document. They
+            helps to understand the meaning of the content for the browser,
+            screen reader and other programs that parses HTML document.
           </p>
-          <ul>
-            <li><code>&lt;div&gt;</code></li>
-            <li><code>&lt;span&gt;</code></li>
-            <li><code>&lt;h1&gt;-&lt;h6&gt;</code></li>
-            <li><code>&lt;p&gt;</code></li>
-            <li><code>&lt;ul&gt;</code></li>
-            <li><code>&lt;li&gt;</code></li>
-            <li><code>&lt;picture&gt;</code></li>
-            <li><code>&lt;img&gt;</code></li>
-            <li><code>&lt;a&gt;</code></li>
-            <li><code>&lt;button&gt;</code></li>
-            <li><code>&lt;section&gt;</code></li>
-            <li><code>&lt;article&gt;</code></li>
-            <li><code>&lt;nav&gt;</code></li>
-            <li><code>&lt;header&gt;</code></li>
-            <li><code>&lt;footer&gt;</code></li>
-            <li><code>&lt;main&gt;</code></li>
-          </ul>
+          <p>
+            In this doc we'll mostly talk about
+            <a
+              href="https://html.spec.whatwg.org/multipage/sections.html#sections"
+              >sections content</a
+            >. Full list of HTML tags can be found in specification:
+            <a href="https://html.spec.whatwg.org/multipage/#toc-semantics"
+              >WHATWG -- HTML Living Standard</a
+            >.
+          </p>
         </section>
         <section id="about">
           <h2>Who need Semantics?</h2>
           <p>
-            Screen readers, search engines, and other programs rely on
+            Everyone who works with the content of the document. Screen readers
+            use semantics to help users navigate the site. Search engines, AI,
+            and other programs rely on
             <strong>semantics</strong> to determine the meaning of a piece of
             content.
           </p>
           <p>
+            Browsers (desktop, mobile, and on other devices such as
+            <a
+              href="https://www.idownloadblog.com/2018/06/18/apple-watch-web-content-howto/"
+            >
+              smart watches</a
+            >) also use semantics to make content easy to read in order to
+            display content correctly in reading mode
+          </p>
+          <p>
             For example, a screen reader will use the semantics of a document to
-            determine how to render it to the user. If the developer used the
-            correct semantics, the screen reader will be able to render the
+            determine how to sound out it to the user. If the developer used the
+            correct semantics, the screen reader will be able to reader the
             document in a way that makes sense to the user.
           </p>
         </section>
 
-        <section id="non-semantic">
+        <section id="no-meaning">
           <h2>Divs and Spans</h2>
           <p>
-            They are non-semantic tags, which means they don't have any meaning.
+            They are no-meaning tags, which means that they don't make any
+            semantic meaning and serve to stylize or unify some content.
           </p>
           <p>
-            <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are the most
-            common tags you will use in your HTML documents. They are used to
-            separate content into groups. <code>&lt;div&gt;</code> is a
-            block-level element and <code>&lt;span&gt;</code> is an inline
-            element.
+            <code
+              ><a
+                href="https://html.spec.whatwg.org/dev/grouping-content.html#the-div-element"
+                >&lt;div&gt;</a
+              ></code
+            >
+            and
+            <code
+              ><a
+                href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element"
+                >&lt;span&gt;</a
+              ></code
+            >
+            are the most common tags you will use in your HTML documents. They
+            are used to separate content into groups.
           </p>
         </section>
 
@@ -88,8 +104,13 @@
             important.
           </p>
           <p>
-            Headings are block-level elements, which means they will start on a
-            new line and take up the full width of the page.
+            <a
+              href="https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines"
+              >Headings</a
+            >
+            are used to define the hierarchy of your content. Heading
+            information can be used by user agents to construct a table of
+            contents for a document automatically.
           </p>
           <section>
             <h3>Rules of using headings</h3>
@@ -111,13 +132,27 @@
 
         <section id="sections-and-articles">
           <h2>Section and article</h2>
+          <p>
+            <code
+              >&lt;<a
+                href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element"
+                >section&gt;</a
+              ></code
+            >
+            and
+            <code
+              ><a
+                href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element"
+                >&lt;article&gt;</a
+              ></code
+            >
+            are grouping content that are used to define the structure of your
+            document.
+          </p>
+
           <section>
             <h3>Section</h3>
-            <p>
-              <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> are
-              block-level elements that are used to define the structure of your
-              document.
-            </p>
+
             <p>
               <code>&lt;section&gt;</code> is used to define a section of a
               document. It can be used to group related content together. For
@@ -158,6 +193,20 @@
       <aside class="aside">
         <h2 class="aside__title">Resources</h2>
         <article class="post">
+          <h3>HTML Living Standard</h3>
+          <p>
+            HTML Living Standard is the official specification for HTML. It
+            defines the syntax and semantics of HTML. It also defines the
+            processing model for HTML documents.
+          </p>
+          <a
+            class="post__link"
+            href="https://html.spec.whatwg.org/multipage/"
+            target="_blank"
+            >HTML Living Standard</a
+          >
+        </article>
+        <article class="post">
           <h3>HTML Doctor</h3>
           <p>
             is a website that provides articles and tutorials on HTML and
@@ -185,8 +234,7 @@
           <p>
             In this article, Olushuyi explores a mental model that helps you
             decide between the &lt;section&gt; and &lt;article&gt; elements when
-            writing documents. You will explore how grouping content affects
-            accessibility and how you can make it all count for users.
+            writing documents.
           </p>
           <a
             class="post__link"
@@ -215,7 +263,9 @@
       </article>
     </aside>
     <footer class="footer">
-      By Zakhar Ausiyevich 2023. Great thanks to Copilot 🤝.
+      By Zakhar Ausiyevich 2023. Great thanks to
+      <a href="https://twitter.com/alexnozer_dev"> Aleksey Nazarenko</a> and
+      Copilot 🤝.
     </footer>
   </body>
 </html>
