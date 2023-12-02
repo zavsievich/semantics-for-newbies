@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantics for newbies</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#tags">Tags</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#non-semantic">Divs and Spans</a></li>
+          <li><a class="nav__link" href="#headings">Headings</a></li>
+          <li>
+            <a class="nav__link" href="#sections-and-articles"
+              >Sections and Articles</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="grid">
+      <main class="main">
+        <h1>Semantics for newbies</h1>
+        <section id="tags">
+          <h2>Common Tags</h2>
+          <p>
+            These are the most common tags you will use in your HTML documents:
+          </p>
+          <ul>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;span&gt;</code></li>
+            <li><code>&lt;h1&gt;-&lt;h6&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;ul&gt;</code></li>
+            <li><code>&lt;li&gt;</code></li>
+            <li><code>&lt;picture&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+            <li><code>&lt;a&gt;</code></li>
+            <li><code>&lt;button&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;nav&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;main&gt;</code></li>
+          </ul>
+        </section>
+        <section id="about">
+          <h2>Who need Semantics?</h2>
+          <p>
+            Screen readers, search engines, and other programs rely on
+            <strong>semantics</strong> to determine the meaning of a piece of
+            content.
+          </p>
+          <p>
+            For example, a screen reader will use the semantics of a document to
+            determine how to render it to the user. If the developer used the
+            correct semantics, the screen reader will be able to render the
+            document in a way that makes sense to the user.
+          </p>
+        </section>
+
+        <section id="non-semantic">
+          <h2>Divs and Spans</h2>
+          <p>
+            They are non-semantic tags, which means they don't have any meaning.
+          </p>
+          <p>
+            <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are the most
+            common tags you will use in your HTML documents. They are used to
+            separate content into groups. <code>&lt;div&gt;</code> is a
+            block-level element and <code>&lt;span&gt;</code> is an inline
+            element.
+          </p>
+        </section>
+
+        <section id="headings">
+          <h2>Headings</h2>
+          <p>
+            Headings are used to define the hierarchy of your content. There are
+            six levels of headings, <code>&lt;h1&gt;</code> through
+            <code>&lt;h6&gt;</code>. <code>&lt;h1&gt;</code> is the most
+            important heading, and <code>&lt;h6&gt;</code> is the least
+            important.
+          </p>
+          <p>
+            Headings are block-level elements, which means they will start on a
+            new line and take up the full width of the page.
+          </p>
+          <section>
+            <h3>Rules of using headings</h3>
+            <ul>
+              <li>Use headings to define the hierarchy of your content;</li>
+              <li>Don't skip heading levels;</li>
+              <li>Don't use headings just to make text bigger or bold;</li>
+              <li>
+                Use heading in HTML just like you would use them in the course
+                work;
+              </li>
+              <li>
+                Read your document through the headings and try to understand
+                the meaning of the provided content.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="sections-and-articles">
+          <h2>Section and article</h2>
+          <section>
+            <h3>Section</h3>
+            <p>
+              <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> are
+              block-level elements that are used to define the structure of your
+              document.
+            </p>
+            <p>
+              <code>&lt;section&gt;</code> is used to define a section of a
+              document. It can be used to group related content together. For
+              example, you can use <code>&lt;section&gt;</code> to group a list
+              of blog posts.
+            </p>
+          </section>
+
+          <section>
+            <h3>Article</h3>
+            <p>
+              <code>&lt;article&gt;</code> is used to define an independent,
+              self-contained piece of content. For example, you can use
+              <code>&lt;article&gt;</code> to define a blog post or the
+              product/comment component.
+            </p>
+          </section>
+
+          <h3>Rules</h3>
+          <ul>
+            <li>
+              Use <code>&lt;section&gt;</code> to group related content
+              together;
+            </li>
+            <li>
+              Use <code>&lt;article&gt;</code> to define an independent,
+              self-contained piece of content;
+            </li>
+            <li>Sections and articles can be nested inside each other;</li>
+            <li>
+              Sections and articles always should have a heading inside them. If
+              there is no heading, you should use
+              <code>&lt;div&gt;</code> instead;
+            </li>
+          </ul>
+        </section>
+      </main>
+      <aside class="aside">
+        <h2 class="aside__title">Resources</h2>
+        <article class="post">
+          <h3>HTML Doctor</h3>
+          <p>
+            is a website that provides articles and tutorials on HTML and
+            related subjects.
+          </p>
+          <a class="post__link" href="http://html5doctor.com/" target="_blank"
+            >HTML5 Doctor</a
+          >
+        </article>
+        <article class="post">
+          <h3>MDN</h3>
+          <p>
+            is a website that provides articles and tutorials on HTML and
+            related subjects.
+          </p>
+          <a
+            class="post__link"
+            href="https://developer.mozilla.org/en-US/"
+            target="_blank"
+            >MDN</a
+          >
+        </article>
+        <article class="post">
+          <h3>Section vs article</h3>
+          <p>
+            In this article, Olushuyi explores a mental model that helps you
+            decide between the &lt;section&gt; and &lt;article&gt; elements when
+            writing documents. You will explore how grouping content affects
+            accessibility and how you can make it all count for users.
+          </p>
+          <a
+            class="post__link"
+            href="https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/"
+            target="_blank"
+            >Section vs article</a
+          >
+        </article>
+      </aside>
+    </div>
+  </body>
+</html>
